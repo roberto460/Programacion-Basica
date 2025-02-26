@@ -1,0 +1,9 @@
+#Programa con el condicional IF e identaciones
+
+edad = int(input("Ingrese su edad: "))
+if edad >= 18:
+         print("Eres mayor de edad.")
+else:
+    print("Eres menor de edad.")
+
+    # Lo que los diferencia es la simplicidad del codigo de python comparado a lo especifico de c.
