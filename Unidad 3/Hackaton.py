@@ -1,7 +1,14 @@
-print ("¿Deseas realizar el madado?")
+#Hackaton Lista Mandado
+print("¿deseas realizar el mandado?(si/no)")
 
-Respuesta = ("si.")
-Respuesta = ("no.")
-    if opcion == "si"
-        print ("¿Cuantos productos deseas comprar?")
+respuesta == "si"
+    print("cuantos productos deseas comprar.")
+    
+
+
+
+
+    
+
+    
 

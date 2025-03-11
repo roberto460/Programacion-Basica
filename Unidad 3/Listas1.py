@@ -2,7 +2,7 @@
 numeros = [1, 2, 3, 4, 5]
 
 # Lista de cadenas
-nombres = ["Ana", "Luis", "Pedro"]
+nombres = ["Ana", "Luis", "Pedro", "Maria"]
 
 # Lista con diferentes tipos de datos
 mixta = [10, "Python", True, 3.14]
