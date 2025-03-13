@@ -23,19 +23,36 @@ Los lenguajes de programación se dividen en dos tipos: alto nivel y bajo nivel.
 
 
 ### Unidad 2
->Operadores:  
-'if'
-'else'
-'elseif'
-'while'
-'for'
+>Operadores: Los lenguajes de programación se dividen en dos tipos: alto nivel y bajo nivel. Los lenguajes de bajo nivel son los que están más cerca de la computadora, mientras que los de alto nivel están más lejos. Los lenguajes de alto nivel son más fáciles de leer y escribir para los humanos, mientras que los lenguajes de bajo nivel se dirigen más directamente a la computadora.
+'for producto in lista_compras:
+    print(f"- {producto}")'
 
->Librerias:
+'if not tareas:
+            print("📭 No hay tareas pendientes.")'
 
->Tipos de datos:
+'else:
+            print("\n📌 Lista de Tareas:")
+            for i, tarea in enumerate(tareas, 1):
+                print(f"{i}. {tarea}")'
+
+'while True:
+    print("\n📋 MENÚ DE TAREAS 📋")'
+
+'for i, tarea in enumerate(tareas, 1):
+                print(f"{i}. {tarea}")'
+
+
+>Librerias: es un conjunto de funciones y rutinas predefinidas que se pueden utilizar para simplificar el proceso de programación.
+'import requests
+response = requests.get('https://api.github.com')
+print(response.status_code)
+print(response.json())'
+
+>Tipos de datos: 
 
 >Switch (Programación):
 
 ### Unidad 3
 >Listas:
 
+>Diccionarios:
