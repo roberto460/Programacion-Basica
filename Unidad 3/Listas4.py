@@ -12,32 +12,11 @@ print(Libre)
 print(Materias)
 print(Profesores)
 
-#
+
 print(len(Nombres))
 
-#Ornenar elementos min y max
-print(max(Edades))
-print(min(Edades))
-
-#Ordenar elementos
-Edades.sort()
-print(Edades)
-Nombres.sort()
-print(Nombres)
-Libre.sort()
-print(Libre)
-Materias.sort()
-print(Materias)
-Profesores.sort()
-print(Profesores)
-
-#Elimanar elementos
-Materias.remove("Programación")
+Materias.insert(0,"Programación")#Inserta en dato en la posicion deseada (primero posición).
 print(Materias)
 
-#Agregar elemento al final
-Materias.append("Programación")
-print(Materias)
-
-Materias.append([1], "Programación")
-print(Materias)
+for Materia in Materias: 
+    print(Materia)

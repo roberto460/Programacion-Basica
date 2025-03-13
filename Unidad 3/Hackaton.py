@@ -1,8 +1,12 @@
 #Hackaton Lista Mandado
-print("¿deseas realizar el mandado?(si/no)")
+Pregunta = input( "¿Deseas realizar una compra?")
 
-respuesta == "si"
-    print("cuantos productos deseas comprar.")
+Respuesta = "si" 
+print("¿Cuantos articulos deseas comprar?")
+
+if Respuesta == "si":
+    Articulo1 = input("¿Cual es tu primer articulo?")
+    lista_compras.oppend(Articulo1)
     
 
 
