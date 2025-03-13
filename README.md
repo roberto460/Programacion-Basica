@@ -24,6 +24,7 @@ Los lenguajes de programación se dividen en dos tipos: alto nivel y bajo nivel.
 
 ### Unidad 2
 >Operadores: Los lenguajes de programación se dividen en dos tipos: alto nivel y bajo nivel. Los lenguajes de bajo nivel son los que están más cerca de la computadora, mientras que los de alto nivel están más lejos. Los lenguajes de alto nivel son más fáciles de leer y escribir para los humanos, mientras que los lenguajes de bajo nivel se dirigen más directamente a la computadora.
+
 'for producto in lista_compras:
     print(f"- {producto}")'
 
@@ -43,6 +44,7 @@ Los lenguajes de programación se dividen en dos tipos: alto nivel y bajo nivel.
 
 
 >Librerias: es un conjunto de funciones y rutinas predefinidas que se pueden utilizar para simplificar el proceso de programación.
+
 'import requests
 response = requests.get('https://api.github.com')
 print(response.status_code)
