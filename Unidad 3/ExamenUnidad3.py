@@ -1,10 +1,26 @@
 # Examen unidad 3.
 
+import csv
+
 # Para manejar fechas y horas
 import datetime  
 
 # Para pausas (Pausa de 2 segundos)
 import time  
+
+def guardar_jugadores_csv():
+    with open('jugadores.csv', mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["Nombre", "Edad", "Posición"])
+        for jugador, detalles in Jugadores.items():
+            writer.writerow([jugador, detalles["Edad"], detalles["Posición"]])
+
+def guardar_equipos_csv():
+    with open('equipos.csv', mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["Equipo", "País", "Liga"])
+        for equipo, detalles in Equipos.items():
+            writer.writerow([equipo, detalles["País"], detalles["Liga"]])
 
 Jugadores = {}  
 Equipos = {}    
