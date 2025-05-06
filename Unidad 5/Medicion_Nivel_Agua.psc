@@ -12,13 +12,13 @@ Algoritmo Medicion_Nivel_Agua
 	Leer nivel_agua
 	
 	Si nivel_agua < umbral_bajo Entonces
-	
 		alerta = "El nivel de agua es demasiado bajo."
-	Sino si nivel_agua > umbral_alto Entonces
-			alerta = "El nivel de agua es demasiado alto."	
-	Sino
-		alerta = "El nivel de agua está dentro del rango seguro."	
 	FinSi
 	
+	Si nivel_agua > umbral_alto Entonces
+		alerta = "El nivel de agua es demasiado bajo."
+	Sino 
+		alerta = "El nivel de agua está dentro del rango."
+	FinSi
 	Escribir alerta
 FinAlgoritmo
