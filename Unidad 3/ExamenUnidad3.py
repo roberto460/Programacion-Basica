@@ -1,5 +1,13 @@
 # Examen unidad 3.
 
+import time
+from reader import feed
+
+def main():
+    """Imprime el último tutorial de Python"""
+tic = time.perf_counter()
+    
+   
 # Para manejar fechas y horas
 import datetime  
 
@@ -89,3 +97,9 @@ while True:
         print("👋 Saliendo del programa.¡Hasta luego!💤")
         print("Fecha y hora actual:", datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
         break
+
+toc = time.perf_counter()
+print(f"El tutorial ha sido descargado en {toc - tic:0.4f} segundos")
+
+if __name__ == "__main__":
+    main()
