@@ -22,7 +22,7 @@ class CalculatorApp(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Calculadora")
-        self.setGeometry(100, 100, 300, 220)
+        self.setGeometry(100, 100, 600, 600)
         
         self.initUI()
 
