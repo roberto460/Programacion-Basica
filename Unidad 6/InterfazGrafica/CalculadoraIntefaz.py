@@ -21,8 +21,8 @@ def division(a, b):
 class CalculatorApp(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Calculadora y Conversión")
-        self.setGeometry(100, 100, 300, 250)
+        self.setWindowTitle("Calculadora")
+        self.setGeometry(100, 100, 300, 220)
         
         self.initUI()
 
@@ -38,7 +38,6 @@ class CalculatorApp(QWidget):
         self.button_resta = QPushButton("Resta", self)
         self.button_multiplicacion = QPushButton("Multiplicación", self)
         self.button_division = QPushButton("División", self)
-        self.button_convert = QPushButton("Convertir Número 1 a Float", self)
 
         self.result_label = QLabel("Resultado:", self)
 
@@ -47,7 +46,6 @@ class CalculatorApp(QWidget):
         self.button_resta.clicked.connect(lambda: self.calculate("resta"))
         self.button_multiplicacion.clicked.connect(lambda: self.calculate("multiplicacion"))
         self.button_division.clicked.connect(lambda: self.calculate("division"))
-        self.button_convert.clicked.connect(self.convert_to_float)
 
         # Layout
         layout = QVBoxLayout()
@@ -59,7 +57,6 @@ class CalculatorApp(QWidget):
         layout.addWidget(self.button_resta)
         layout.addWidget(self.button_multiplicacion)
         layout.addWidget(self.button_division)
-        layout.addWidget(self.button_convert)
         layout.addWidget(self.result_label)
 
         self.setLayout(layout)
@@ -83,16 +80,9 @@ class CalculatorApp(QWidget):
         except ValueError:
             QMessageBox.warning(self, "Error", "Ingrese números válidos.")
 
-    def convert_to_float(self):
-        texto = self.input_num1.text()
-        try:
-            numero = float(texto)
-            self.result_label.setText(f"Conversión a float: {numero}")
-        except ValueError:
-            QMessageBox.warning(self, "Error", "Por favor ingresa un número válido.")
-
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ventana = CalculatorApp()
     ventana.show()
     sys.exit(app.exec_())
+
