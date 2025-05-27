@@ -18,7 +18,6 @@ for caracter in texto:
     else:
         contador_otros += 1
 
-
 print(f"Vocales: {contador_vocales}")
 print(f"Consonantes: {contador_consonantes}")
 print(f"Números: {contador_numeros}")

@@ -9,4 +9,3 @@ palabras = Frase_texto.split()
 
 cantidad_palabras = len(palabras)
 print(f"El texto contiene {cantidad_palabras} palabras.")
-
